@@ -1,0 +1,11 @@
+He tenido algunos problemas para poder instalar correctamente Yarn,NodeBridge... para que todo funcionara correctamente.
+Es por eso que no me ha sido posible realizar la practica con Unity y que funcionara. 
+Aún así intentaré explicar que se debería haber hecho.
+
+En teoría, si ejecutamos el proyecto al descargarlo veríamos como hay un cubo que sigue a nuestra nariz, y otro
+que sigue a nuestra mano izquierda. Para tener más puntos de referencia(boca, mano derecha etc...) deberíamos crear otro Game Object
+e introducirlo dentro del grupo Pose, después deberíamos modificar el Script Tracking creando una nueva variable, añadirla a Pose, y
+especificar exactamente que parte del cuerpo corresponde (habría que buscar el nombre exacto que se le ha dado por ejemplo rightWrist para el brazo derecho)
+esto se tendría que hacer en el Update, y por otro lado clonar las otras partes de código pero con nuestra nueva variable que corresponde a otra parte del cuerpo.
+Una vez hecho, en teoría, al ejecutar el código, si previamente en Unity hemos arrastrado (declarado) que nuestro GameObject corresponde a la variable que hemos 
+declarado en el Script, se debería ver un nuevo cubo (o la forma que le hayamos dado) que sigue los movimientos de la parte del cuerpo que hemos especificado. 
